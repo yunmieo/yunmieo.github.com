@@ -32,8 +32,8 @@ a:hover, a:active {text-decoration:underline;}
     }
 }
 .disabled { pointer-events: none;cursor: default;display : none;}
-body {font-family:'Hi Melody', cursive,'Malgun Gothic','맑은 고딕',Dotum,'돋움',sans-serif !important;font-size: 15px;color: #000}
-html { font-size: 100%; font-size: 15px;line-height: 22px;color: #000;}
+body {font-family:'Hi Melody', cursive,'Malgun Gothic','맑은 고딕',Dotum,'돋움',sans-serif !important;font-size: 18px;color: #000}
+html { font-size: 100%; font-size: 18px;line-height: 22px;color: #000;}
 .clear{clear:both;height:0;visibility:hidden;display:block;}
 .clear-both {clear:both;}
 .btn{cursor:pointer;}
@@ -117,7 +117,7 @@ span.requied_info { color: #b02c2c;font-size:12px !important; }
 .ft_lime_green{color:#009933;}
 .ft_pure_cyan{color:#00D0FF;}
 .ft_lightgray3{color:#858585;}
-.ft_pink{color:#ef2831}
+.ft_pink{color:#F14E95}
 
 /*FT Color E*/
 /*FT style S*/
