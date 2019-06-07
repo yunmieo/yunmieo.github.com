@@ -1,5 +1,6 @@
 ﻿@import url(https://cdn.jsdelivr.net/gh/koreadaily/NotoSansKR-Hestia@efaffc/stylesheets/NotoSansKR-Hestia.css);
-@import url(https://fonts.googleapis.com/css?family=Hi+Melody&amp;subset=korean);
+/*@import url(https://fonts.googleapis.com/css?family=Hi+Melody&amp;subset=korean);*/
+@import url('https://fonts.googleapis.com/css?family=Gaegu:400,700&display=swap');
  
 
 
@@ -32,14 +33,14 @@ a:hover, a:active {text-decoration:underline;}
     }
 }
 .disabled { pointer-events: none;cursor: default;display : none;}
-body {font-family:'Hi Melody', cursive,'Malgun Gothic','맑은 고딕',Dotum,'돋움',sans-serif !important;font-size: 18px;color: #000}
+body {font-family:'Gaegu', cursive,'Malgun Gothic','맑은 고딕',Dotum,'돋움',sans-serif !important;font-size: 18px;color: #000}
 html { font-size: 100%; font-size: 18px;line-height: 22px;color: #000;}
 .clear{clear:both;height:0;visibility:hidden;display:block;}
 .clear-both {clear:both;}
 .btn{cursor:pointer;}
 
 input, textarea, select, button, table, th, td {
-font-family:'Hi Melody', cursive,'Malgun Gothic','맑은 고딕',Dotum,'돋움',sans-serif !important; }
+font-family:'Gaegu', cursive,'Malgun Gothic','맑은 고딕',Dotum,'돋움',sans-serif !important; }
 p { margin: 0px;padding: 0px;}
 ul, ol { margin: 0px;padding: 0px;}
 blockquote {padding: 10px 20px;margin: 0 0 30px;border-left: 5px solid #eee;}
@@ -158,7 +159,7 @@ span.requied_info { color: #b02c2c;font-size:12px !important; }
 
 
 /* H tags S*/
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {font-family:'Hi Melody', cursive,'Malgun Gothic','맑은 고딕',Dotum,'돋움',sans-serif !important;margin:0px;padding:0px;}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {font-family:'Gaegu', cursive,'Malgun Gothic','맑은 고딕',Dotum,'돋움',sans-serif !important;margin:0px;padding:0px;}
 h1 {font-size: 40px;line-height:1.25em}
 h2 {font-size: 32px;line-height:1.25em}
 h3 {font-size: 30px;line-height:1.25em}
@@ -330,7 +331,7 @@ hr { margin: 5px 0; padding: 5px 0; }
     
 
 .loading {
-font-family:'Hi Melody', cursive,'Malgun Gothic','맑은 고딕',Dotum,'돋움',sans-serif !important;
+font-family:'Gaegu', cursive,'Malgun Gothic','맑은 고딕',Dotum,'돋움',sans-serif !important;
 font-size: 14px;
 border: 5px solid #666;
 width: 200px;
