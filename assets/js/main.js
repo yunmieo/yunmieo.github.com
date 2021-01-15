@@ -97,7 +97,11 @@
   }
 
     // Skills section
- 
+  $(".single_portfolio").click(function (e) {
+
+      var url = $(this).data("href");
+      window.open(url, '_self');
+  });
   
 
   // Skills section
@@ -151,37 +155,30 @@
       'share': false
     }); 
   }); 
-  var mySwiper = new Swiper('portfolio-details-carousel .swiper-container', {
-      pagination: {
-          el: '.swiper-pagination',
-          type: 'custom',
-          renderCustom: function (swiper, current, total) {
-              var open_text = "<span class='opencopy-slide-bx' onclick='javascript:click_slidepopuplist()'><img src='assets/images/icons/icon_play_open.png' alt='show all slide' /></span>";
-              var number_text = "<span class='count-slide-bx'><span>" + ('' + current).slice(-2) + '</span><span>/</span><span>' + ('' + total).slice(-2) + "</span></span>";
-              return "<span class='count-open-box'>" + number_text + open_text + "</span>";
-          }
-      },
-      navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-      },
-      direction: 'horizontal',
-      loop: true,
-      //autoplay: {
-      //    delay: 3000,
-      //    stopOnLast: true
-      //},
-      slidesPerView: 1,
-      spaceBetween: 0,
-      mousewheel: true,
-      renderCustom: function (swiper, current, total) {
-          return current + ' of ' + total;
-      }
-  });
 
 
 })(jQuery);
+$(window).on('load', function () {
+    $('.portfolio-filter ul li').on('click', function () {
+        $('.portfolio-filter ul li').removeClass('active');
+        $(this).addClass('active');
 
+        var data = $(this).attr('data-filter');
+        $workGrid.isotope({
+            filter: data
+        });
+    });
+
+    if (document.getElementById('portfolio')) {
+        var $workGrid = $('.portfolio-grid').isotope({
+            itemSelector: '.all',
+            percentPosition: true,
+            masonry: {
+                columnWidth: '.grid-sizer'
+            }
+        });
+    }
+});
 
 //$(document).ready(function () {
 
